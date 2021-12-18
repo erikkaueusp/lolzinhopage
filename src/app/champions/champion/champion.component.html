@@ -1,0 +1,7 @@
+<h1 style="text-align:center">Lista de Campeões</h1>
+<div class="box">
+    <div *ngFor="let champ of championsList$ | async;">
+        <app-card title={{champ.name}} subtitle={{champ.title}} description={{champ.blurb}} url="https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/{{champ.id}}">
+        </app-card>
+    </div>
+</div>

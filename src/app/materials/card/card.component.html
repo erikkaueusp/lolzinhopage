@@ -1,0 +1,14 @@
+<mat-card class="example-card">
+    <mat-card-header class="card-header">
+        <mat-card-title> {{title}}</mat-card-title>
+        <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+    </mat-card-header>
+    <i (click)=onClickLeft() class="fas fa-chevron-left fa-2x"></i>
+    <i (click)=onClickRight() class="fas fa-chevron-right fa-2x"></i>
+    <img mat-card-image [src]="url + number">
+    <mat-card-content style="margin-top:10px; height:150px; overflow: auto">
+        <p style="overflow: auto">
+            <strong>História:</strong> {{description}}
+        </p>
+    </mat-card-content>
+</mat-card>
