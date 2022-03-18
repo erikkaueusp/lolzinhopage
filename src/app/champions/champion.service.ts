@@ -11,7 +11,7 @@ import { Champion, ChampionsModelAPI } from './../models/championsmodelapi';
 })
 export class ChampionService {
 
-  private readonly API = 'http://ddragon.leagueoflegends.com/cdn/11.24.1/data/pt_BR/champion.json'
+  private readonly API = 'https://ddragon.leagueoflegends.com/cdn/11.24.1/data/pt_BR/champion.json'
 
   constructor(private http: HttpClient) { }
 
