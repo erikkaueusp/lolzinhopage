@@ -2,6 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -11,20 +12,17 @@ import { ChampionComponent } from './champions/champion/champion.component';
 import { CardComponent } from './materials/card/card.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CardComponent,
-    ChampionComponent
-  ],
+  declarations: [AppComponent, CardComponent, ChampionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
-    HttpClientModule
+    MatIconModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

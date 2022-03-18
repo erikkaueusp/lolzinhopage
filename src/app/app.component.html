@@ -1,4 +1,10 @@
-<mat-toolbar color="primary">
-    Lolzinho by Crash
-</mat-toolbar>
+<p>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Crash Lolzinho</span>
+      <span class="example-spacer"></span>
+        <button [routerLink]="'/champions'" type="button" class="btn btn-dark">Champion List</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</p>
 <router-outlet></router-outlet>
